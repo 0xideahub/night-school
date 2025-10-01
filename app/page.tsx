@@ -35,6 +35,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black z-10"></div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=2000&auto=format&fit=crop"
             alt="Minimalist architecture"
@@ -75,14 +76,14 @@ export default function Home() {
           <div className="max-w-4xl space-y-6 text-lg md:text-xl font-light leading-relaxed text-white/70">
             <p>
               After years of maximalist excess, minimalist design is experiencing a profound renaissance.
-              This isn't nostalgia—it's evolution.
+              This isn&apos;t nostalgia—it&apos;s evolution.
             </p>
             <p>
               Contemporary minimalism embraces its foundational principles while addressing the
               complexities of our modern world.
             </p>
             <p>
-              From MoMA's recently reimagined Soho store to cutting-edge digital experiences,
+              From MoMA&apos;s recently reimagined Soho store to cutting-edge digital experiences,
               the aesthetic of restraint speaks louder than ever in our cluttered cultural landscape.
             </p>
           </div>
@@ -143,7 +144,7 @@ export default function Home() {
               </div>
               <div className="space-y-4 text-lg font-light text-white/70 leading-relaxed">
                 <p>
-                  The leading exponent of minimalism, Judd's "Specific Objects" (1964) revolutionized
+                  The leading exponent of minimalism, Judd&apos;s &ldquo;Specific Objects&rdquo; (1964) revolutionized
                   how we understand art. His work sought autonomy and clarity for the constructed object,
                   achieving a rigorously democratic presentation without compositional hierarchy.
                 </p>
@@ -181,8 +182,8 @@ export default function Home() {
               </div>
               <div className="space-y-4 text-lg font-light text-white/70 leading-relaxed">
                 <p>
-                  Martin's ethereal grids and barebones geometric compositions created meditative
-                  spaces of profound quietude. Her minimal canvases weren't about reduction—they
+                  Martin&apos;s ethereal grids and barebones geometric compositions created meditative
+                  spaces of profound quietude. Her minimal canvases weren&apos;t about reduction—they
                   were about revelation.
                 </p>
                 <p>
@@ -206,28 +207,28 @@ export default function Home() {
           </h3>
           <div className="space-y-8 text-lg md:text-xl font-light text-white/70 leading-relaxed">
             <p>
-              In 2025, minimalism's resurgence speaks to urgent contemporary needs. As our digital
+              In 2025, minimalism&apos;s resurgence speaks to urgent contemporary needs. As our digital
               and physical worlds grow increasingly complex, the call for clarity becomes more pronounced.
             </p>
             <p>
-              MoMA's Soho store renovation exemplifies this evolution—minimalist principles applied
+              MoMA&apos;s Soho store renovation exemplifies this evolution—minimalist principles applied
               not to erase history, but to honor it. The design reveals original architectural features
               while embedding them in contemporary contexts.
             </p>
             <p>
-              This isn't the cold, sterile minimalism of decades past. Today's approach incorporates
+              This isn&apos;t the cold, sterile minimalism of decades past. Today&apos;s approach incorporates
               warmth through earth tones, sustainability through material consciousness, and humanity
               through considered imperfection.
             </p>
             <p>
-              From Apple's product design to minimalist fashion and sustainable architecture, the
+              From Apple&apos;s product design to minimalist fashion and sustainable architecture, the
               legacy of Judd, Flavin, and Martin continues to shape how we interact with objects
               and spaces.
             </p>
           </div>
           <div className="mt-20 pt-20 border-t border-white/10">
             <blockquote className="text-3xl md:text-4xl font-light italic text-white/50 text-center">
-              "What you see is what you see."
+              &ldquo;What you see is what you see.&rdquo;
             </blockquote>
             <p className="text-sm text-white/30 text-center mt-6">— Frank Stella</p>
           </div>
