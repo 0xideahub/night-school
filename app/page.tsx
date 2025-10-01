@@ -192,6 +192,25 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
+            {/* Sol LeWitt */}
+            <div className="grid md:grid-cols-[300px_1fr] gap-12">
+              <div>
+                <h4 className="text-3xl md:text-4xl font-light mb-2">Sol LeWitt</h4>
+                <p className="text-xs tracking-[0.2em] text-white/40">CONCEPTUAL ARTIST</p>
+              </div>
+              <div className="space-y-4 text-lg font-light text-white/70 leading-relaxed">
+                <p>
+                  Bridging minimalism and conceptual art, LeWitt&apos;s radical premise transformed
+                  artistic authorship itself. &ldquo;The idea becomes a machine that makes the art,&rdquo;
+                  he declared, creating over 1,000 wall drawings as written instructions executed by others.
+                </p>
+                <p>
+                  His systematic approach proved that conception could be separated from execution—that
+                  art could exist as pure thought, democratically reproducible across time and space.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
