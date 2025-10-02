@@ -33,14 +33,14 @@ export default function Home() {
               {user ? (
                 <button
                   onClick={signOut}
-                  className="text-sm font-light tracking-wide hover:text-white/60 transition-colors"
+                  className="text-sm font-light tracking-wide hover:text-white/60 transition-colors cursor-pointer relative z-50"
                 >
                   SIGN OUT
                 </button>
               ) : (
                 <button
                   onClick={signInWithGoogle}
-                  className="text-sm font-light tracking-wide hover:text-white/60 transition-colors"
+                  className="text-sm font-light tracking-wide hover:text-white/60 transition-colors cursor-pointer relative z-50"
                 >
                   SIGN IN
                 </button>
