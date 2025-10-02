@@ -1,9 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useAuth } from '@/contexts/AuthContext';
+import Chat from '@/components/Chat';
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
+  const { user, signInWithGoogle, signOut } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +23,28 @@ export default function Home() {
         <div className="container mx-auto px-6 md:px-12 py-8">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-extralight tracking-tight">NIGHT SCHOOL</h1>
-            <div className="hidden md:flex gap-10 text-sm font-light tracking-wide">
-              <a href="#about" className="hover:text-white/60 transition-colors">ABOUT</a>
-              <a href="#principles" className="hover:text-white/60 transition-colors">PRINCIPLES</a>
-              <a href="#pioneers" className="hover:text-white/60 transition-colors">PIONEERS</a>
-              <a href="#today" className="hover:text-white/60 transition-colors">TODAY</a>
+            <div className="flex items-center gap-10">
+              <div className="hidden md:flex gap-10 text-sm font-light tracking-wide">
+                <a href="#about" className="hover:text-white/60 transition-colors">ABOUT</a>
+                <a href="#principles" className="hover:text-white/60 transition-colors">PRINCIPLES</a>
+                <a href="#pioneers" className="hover:text-white/60 transition-colors">PIONEERS</a>
+                <a href="#today" className="hover:text-white/60 transition-colors">TODAY</a>
+              </div>
+              {user ? (
+                <button
+                  onClick={signOut}
+                  className="text-sm font-light tracking-wide hover:text-white/60 transition-colors"
+                >
+                  SIGN OUT
+                </button>
+              ) : (
+                <button
+                  onClick={signInWithGoogle}
+                  className="text-sm font-light tracking-wide hover:text-white/60 transition-colors"
+                >
+                  SIGN IN
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -288,6 +308,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Chat Component */}
+      <Chat />
     </div>
   );
 }
