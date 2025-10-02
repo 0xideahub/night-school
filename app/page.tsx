@@ -32,14 +32,20 @@ export default function Home() {
               </div>
               {user ? (
                 <button
-                  onClick={signOut}
+                  onClick={() => {
+                    console.log('Sign out clicked');
+                    signOut();
+                  }}
                   className="text-sm font-light tracking-wide hover:text-white/60 transition-colors cursor-pointer relative z-50"
                 >
                   SIGN OUT
                 </button>
               ) : (
                 <button
-                  onClick={signInWithGoogle}
+                  onClick={() => {
+                    console.log('Sign in clicked');
+                    signInWithGoogle();
+                  }}
                   className="text-sm font-light tracking-wide hover:text-white/60 transition-colors cursor-pointer relative z-50"
                 >
                   SIGN IN
